@@ -30,8 +30,7 @@ public class BasePage {
 
     //Helper methods
     public Select fromDropdownList(WebElement elemDD) {
-        Select dropdownlist = new Select(elemDD);
-        return dropdownlist;
+        return new Select(elemDD);
     }
     public void waitForScreenToLoad(By locator) {
         waitForElementToAppear(locator);
