@@ -17,9 +17,7 @@ public class contactPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(id = "contact-link")
-    public WebElement contactBtn;
-    
+
     @FindBy(id = "submitMessage")
     public WebElement submitBtn;
 

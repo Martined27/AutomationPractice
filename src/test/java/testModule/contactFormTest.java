@@ -19,8 +19,8 @@ public class contactFormTest extends BaseTest {
 
     try {
 
-        contactpage.waitForScreenToLoad(homepage.headerHomepage);
-        contactpage.contactBtn.click();
+        homepage.waitForScreenToLoad(homepage.headerHomepage);
+        homepage.contactBtn.click();
         contactpage.waitForScreenToLoad(contactpage.messageBox);
         sAssert.assertEquals(contactpage.submitBtn.isDisplayed(),true);
         sAssert.assertAll();

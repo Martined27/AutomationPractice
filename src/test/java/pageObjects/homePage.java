@@ -18,7 +18,8 @@ public class homePage extends BasePage {
     @FindBy(id = "header")
     public WebElement headerHomepage;
 
-
+    @FindBy(id = "contact-link")
+    public WebElement contactBtn;
 
 
 }
