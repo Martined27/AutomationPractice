@@ -21,16 +21,24 @@ public class contactPage extends BasePage {
     @FindBy(id = "submitMessage")
     public WebElement submitBtn;
 
+    @FindBy(id = "id_order")
+    public WebElement orderRefBox;
+
     @FindBy(id = "message")
     public WebElement messageBox;
 
-    @FindBy(id = "uniform-id_contact")
-    public WebElement subject;
+    @FindBy(id = "email")
+    public WebElement emailBox;
+
+    @FindBy(id = "id_contact")
+    public WebElement subjectDD;
+
+    @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div/p")
+    public WebElement successMsg;
 
 
 
 
-//to implement a dropdownlist method.
 
 
 
