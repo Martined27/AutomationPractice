@@ -36,8 +36,14 @@ public class contactPage extends BasePage {
     @FindBy(id = "id_contact")
     public WebElement subjectDD;
 
+    @FindBy(id = "desc_contact2")
+    public WebElement subjectDesc;
+
     @FindBy(id = "fileUpload")
     public WebElement fileUpload;
+
+    @FindBy(xpath = "//*[@id=\"uniform-fileUpload\"]/span[1]")
+    public WebElement fileBox;
 
     @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div/p")
     public WebElement successMsg;

@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +20,7 @@ public class BaseTest {
 
      protected static WebDriver driver;
      public String browserType = CHROME; // <------ Change your desired browser here.
-
+     public String testFilePng = System.getProperty("user.dir") + "\\src\\main\\resources\\test.png";
 
     public void getDriver() {
 
@@ -61,7 +62,6 @@ public class BaseTest {
          getDriver();
 
     }
-
 
 
     @AfterMethod
