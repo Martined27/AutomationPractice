@@ -11,9 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 
+    //<editor-fold desc="Global Variables">
     protected WebDriver driver;
     private static final int TIMEOUT = 6;
     private WebDriverWait wait;
+    //</editor-fold>
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -22,10 +24,14 @@ public class BasePage {
     }
 
 
+
     //Internal methods
-    protected void waitForElementToAppear(By locator) {
+    protected void waitForElementToAppear(By locator)
+    {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+
 
 
     //Helper methods
@@ -39,5 +45,6 @@ public class BasePage {
     public void waitForScreenToLoad(WebElement element ) {
         waitForElementToAppear(By.id(element.getAttribute("id")));
     }
+
 
 }

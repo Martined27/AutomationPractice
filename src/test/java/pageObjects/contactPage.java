@@ -13,11 +13,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class contactPage extends BasePage {
 
+
     public contactPage(WebDriver driver) {
         super(driver);
     }
 
 
+
+    //<editor-fold desc="Web Elements">
     @FindBy(id = "submitMessage")
     public WebElement submitBtn;
 
@@ -35,6 +38,7 @@ public class contactPage extends BasePage {
 
     @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div/p")
     public WebElement successMsg;
+    //</editor-fold>
 
 
 
