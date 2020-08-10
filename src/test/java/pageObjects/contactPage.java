@@ -36,8 +36,14 @@ public class contactPage extends BasePage {
     @FindBy(id = "id_contact")
     public WebElement subjectDD;
 
+    @FindBy(id = "fileUpload")
+    public WebElement fileUpload;
+
     @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div/p")
     public WebElement successMsg;
+
+    @FindBy(xpath = "//p[@class='form-group form-ok']")
+    public WebElement validateEmail;
     //</editor-fold>
 
 
