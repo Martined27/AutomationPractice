@@ -66,9 +66,11 @@ public class BaseTest {
 
     @AfterMethod
      public void drillDown() {
-        if(driver != null)
+        if (driver != null) {
             driver.quit();
+            driver = null;
+        }
 
-     }
+    }
 
 }
