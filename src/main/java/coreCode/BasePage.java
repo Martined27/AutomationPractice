@@ -44,5 +44,11 @@ public class BasePage {
         waitForElementToAppear(By.id(element.getAttribute("id")));
     }
 
+    public boolean validateElementExistence(By locator){
+        if (driver.findElements(locator).size() > 0)
+            return true;
+        else
+            return false;
 
+    }
 }

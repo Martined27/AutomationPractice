@@ -4,12 +4,16 @@ import coreCode.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class contactPage extends BasePage {
 
@@ -51,13 +55,16 @@ public class contactPage extends BasePage {
 
     @FindBy(xpath = "//p[@class='form-group form-ok']")
     public WebElement validateEmail;
+
+    public String validate = "//p[@class='form-group form-ok']";
     //</editor-fold>
 
 
+    }
 
 
 
 
 
 
-}
+
