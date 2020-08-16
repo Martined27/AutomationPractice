@@ -14,7 +14,7 @@ public class BasePage {
     //<editor-fold desc="Global Variables">
     protected WebDriver driver;
     private static final int TIMEOUT = 6;
-    private WebDriverWait wait;
+    private final WebDriverWait wait;
     //</editor-fold>
 
     public BasePage(WebDriver driver) {

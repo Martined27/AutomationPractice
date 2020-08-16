@@ -40,6 +40,7 @@ public class contactPage extends BasePage {
     public WebElement subjectDesc;
 
     @FindBy(id = "fileUpload")
+
     public WebElement fileUpload;
 
     @FindBy(xpath = "//*[@id=\"uniform-fileUpload\"]/span[1]")
