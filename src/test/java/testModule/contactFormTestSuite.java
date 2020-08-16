@@ -27,7 +27,7 @@ public class contactFormTestSuite extends BaseTest {
             sAssert.assertEquals(contactpage.fromDropdownList(contactpage.subjectDD).getFirstSelectedOption().getText(), "Customer service", "Correct Selection");
             contactpage.emailBox.sendKeys("remotejob@plea.se");
             contactpage.orderRefBox.click();
-            sAssert.assertEquals(contactpage.validateElementExistence(By.xpath("//p[@class='form-group form-ok']")),true);
+            sAssert.assertEquals(contactpage.validateElementExistence(By.xpath("//p[@class='form-group form-ok']")),true, "Email is valid");
             contactpage.orderRefBox.sendKeys("2500");
             contactpage.messageBox.sendKeys("this is an automated test");
             contactpage.fileUpload.sendKeys(testFilePng);
