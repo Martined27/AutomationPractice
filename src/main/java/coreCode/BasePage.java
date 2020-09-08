@@ -36,6 +36,7 @@ public class BasePage {
 
     //Helper methods
     public Select fromDropdownList(WebElement elemDD) { return new Select(elemDD); }
+
     public void waitForScreenToLoad(By locator) {
         waitForElementToAppear(locator);
     }
@@ -43,6 +44,7 @@ public class BasePage {
     public void waitForScreenToLoad(WebElement element ) {
         waitForElementToAppear(By.id(element.getAttribute("id")));
     }
+
 
     public boolean validateElementExistence(By locator){
         if (driver.findElements(locator).size() > 0)
