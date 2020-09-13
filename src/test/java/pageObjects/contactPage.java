@@ -56,7 +56,11 @@ public class contactPage extends BasePage {
     @FindBy(xpath = "//p[@class='form-group form-ok']")
     public WebElement validateEmail;
 
-    public String validate = "//p[@class='form-group form-ok']";
+
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement errorMsg;
+
+
     //</editor-fold>
 
 
