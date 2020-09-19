@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a Multi-browser Framework crafted under Page Object Model applied to automationpractice.com. The goal is to practice and experiment with Selenium. Will eventually include more TestSuites with Test cases to demo the capabilities of the owner.
+This is a Multi-browser Solution crafted under Page Object Model applied to automationpractice.com. The goal is to practice and experiment with Selenium. Will eventually include more TestSuites with Test cases to demo the capabilities of the owner.
 
 
 Tools/Tech used
